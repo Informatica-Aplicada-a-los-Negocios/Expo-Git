@@ -1,0 +1,73 @@
+// Necesario para hacer commits en los repositorios
+
+git config --global user.name "Raul"
+
+git config --global user.email "raul.miranda@ucr.ac.cr"
+
+// Comando para crear un archivo desde el cmd
+
+echo Hola Mundo > "index.html"
+
+// Comando para crear un repositorio local
+
+git init
+
+// Comando para abrir la carpeta con VS Code
+
+code .
+
+// Para crear una estructura de HTML sencilla 
+
+Se escribe "!" en el documento y luego se presiona ENTER
+
+// Comando para saber el estado de nuestros archivos 
+
+git status
+
+//Comando para añadir nuestros archivos al stage area
+
+git add "Nombre"
+
+git add .  // Para añadirlos todos
+
+//Comando para hacer commit
+
+git commit -m "Mensaje"
+
+//Comando para ver los commits que tenemos
+
+git log
+
+//Comando para volver a una versión anterior del archivo
+
+git checkout <código del commit>
+
+//Comando para ver nuestras ramas
+
+git branch
+
+//Para cambiar de branch
+
+git switch master 
+
+git switch "Nombre"
+
+// Para volver a la rama anterior
+
+git switch -
+
+// Limpiar la consola
+
+clear
+
+//Conectar nuestro repositorio local a nuestro repositorio en GitHub
+
+git remote add origin https://github.com/RaulMirandar/Mi-Repositorio-Git.git
+
+//Comando para hacer un push de nuestro repositorio local
+
+git push origin master //Directamente a master
+
+//Comando para obtener los cambios de master sin afectar los nuestros
+
+git pull --rebase origin main
